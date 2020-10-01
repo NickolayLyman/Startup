@@ -1,0 +1,36 @@
+.page-header {
+    position: absolute;
+    width: 100%;
+}
+    
+.page-header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-header-navigation-list {
+    display: flex;
+}
+.page-header-logo-link {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    margin-right: 510px;
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.page-header-navigation-list-item-link {
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+.page-header-navigation-list-item:not(:last-child) {
+    margin-right: 30px;
+}

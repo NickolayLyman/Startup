@@ -1,0 +1,55 @@
+.work-examples-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.work-examples-section-title {
+    color: $main-color;
+    font-family: $secondary-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    &::after {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 28px;
+        content: '';
+        width: 50px;
+        height: 2px;
+        border: 1px solid $main-color ;
+        background-color: $main-color;
+    }
+}
+.work-examples-section-links-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.work-examples-section-links-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.work-examples-section-links-list-item-link {
+    color: $main-color;
+    font-family: $secondary-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    &:hover {
+        color: $accent-color;
+        font-weight: 700;
+    }  
+}
+.work-examples-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-examples-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.work-examples-list-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+}

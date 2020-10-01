@@ -1,0 +1,108 @@
+.services-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.services-section-title {
+    color: $main-color;
+    font-family: $secondary-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    &::after {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 28px;
+        content: '';
+        width: 50px;
+        height: 2px;
+        border: 1px solid $main-color ;
+        background-color: $main-color;
+    }
+}
+.services-section-desc {
+    margin-bottom: 70px;
+    color:$main-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.services-section-list {
+    display: flex;
+}
+.services-section-list-item-link-svg {
+    fill: $accent-color;
+}
+.font {
+    width: 40px;
+    height: 43px;
+}
+.code {
+    width: 53px;
+    height: 40px;
+}
+.support {
+    width: 49px;
+    height: 48px;
+}
+.services-section-list-item-title {
+    margin-bottom: 24px;
+    color: $main-color;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+.services-section-list-item-desc {
+    color: $main-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+}
+.services-section-list-item {
+    width: calc((100% - 45px/2)*3);
+
+&:not(:last-child) {
+        margin-right: 45px;
+}
+}
+.services-section-list-item-link {
+    margin-bottom: 29px;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: transparent;
+    align-items: center;
+    &:hover,
+    &:focus {
+        border: 2px solid #dddddd;
+        background-color: $accent-color;
+    } 
+}
+.font-link {
+    padding-top: 25px;
+    padding-right: 23px;
+    padding-bottom: 25px;
+    padding-left: 24px;
+}
+.code-link {
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    padding-left: 21px;
+}
+.support-link {
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+.services-section-list-item-link:hover .services-section-list-item-link-svg,
+.services-section-list-item-link:hover .services-section-list-item-link-svg {
+    fill: $secondary-color;
+}

@@ -1,0 +1,148 @@
+.contact-section {
+    padding-top: 99px;
+    padding-bottom: 99px;
+    text-align: center;
+}
+.contact-section-title {
+    color: $main-color;
+    font-family: $secondary-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    &::after {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 28px;
+        content: '';
+        width: 50px;
+        height: 2px;
+        border: 1px solid $main-color ;
+        background-color: $main-color;
+    }
+}
+.contact-section-section-subtitle {
+    margin-bottom: 50px;
+    color: $main-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.contact-section-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+.contacts-svg {
+    margin-right: 15px;
+}
+.map-marker {
+    width: 12px;
+    height: 17px;
+}
+.phone {
+    width: 12px;
+    height: 20px;
+}
+.envelope {
+    width: 15px;
+    height: 25px;
+}
+.contacts-svg-wrapper {
+    display: flex;
+    vertical-align: middle;
+}
+.contacts-section-list {
+    margin-right: 200px;
+}
+.contacts-section-list-item-title {
+    color: $main-color;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.14;
+    text-transform: uppercase;
+}
+.contacts-section-list-item-text {
+    width: 100%;
+    color: $main-color;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.contacts-section-list-item:not(:last-child) {
+    margin-bottom: 37px;
+}
+.contacts-section-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-form-input {
+    padding: 10px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 44px;
+    border: 1px solid $main-color;
+    &:focus{
+    outline: 1px solid $accent-color;
+    }
+    &:not(:placeholder-shown) {
+        border: 1px solid $accent-color;
+        outline: 1px solid $accent-color;
+    }
+}
+.contacts-form-message {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 740px;
+    resize: none;
+    &:focus{
+        outline: 1px solid $accent-color;
+        }
+    &:not(:placeholder-shown) {
+        border: 1px solid $accent-color;
+        outline: 1px solid $accent-color;
+    }
+}
+.contact-form-button {
+    display: block;
+}
+.contact-form-input::placeholder,
+.contacts-form-message::placeholder {
+    color: $main-color;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+ 
+.contact-form-button {
+    margin-right: 25px;
+    width: 170px;
+    height: 44px;
+    border: 1px solid $main-color;
+    background-color: transparent;
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    &:focus{
+    outline: 1px solid $accent-color;
+    }
+}
+span {
+    color: $accent-color;
+}
+.contact-form-info {
+    color: $main-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+
+}
