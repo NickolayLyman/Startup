@@ -75,21 +75,7 @@
 .social-links-wrapper {
     position: relative;
 }
-.social-links-wrapper-list {
-    position: absolute;
-    top: 0;
-    left: 0; 
-    padding-top: 190px;
-    padding-right: 75px;
-    padding-bottom: 32px;
-    padding-left: 75px;
-    width: 90%;
-    height: 100%;
-    background: rgba(179,179,179,0.5);
-    transform: translateY(100%);
-    opacity: 0;
-    transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1); 
-}
+
 .about-section-link:hover + .social-links-wrapper-list {
     transform: translateY(0%);
     opacity: 1;
@@ -108,13 +94,4 @@
 }
 .social-links-wrapper-list-item:not(:last-child) {
     margin-right: 9px;
-}
-// .social-links-wrapper-list-item-link {
-//     display: block;
-//     width: 28px;
-//     height: 28px;
-// }
-.social-links-wrapper-list-item-link:hover,
-.social-links-wrapper-list-item-link:focus {
-    background-color: $accent-color;
 }
